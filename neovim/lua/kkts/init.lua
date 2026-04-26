@@ -1,2 +1,5 @@
-vim.g.mapleader = " "
+vim.loader.enable()
+
+require("kkts.opts")
+
 require("lang")
