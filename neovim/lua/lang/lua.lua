@@ -1,22 +1,26 @@
-local M = {}
+local filetypes = { "lua" }
 
-M.lsp = function()
-  vim.lsp.config("lua_ls", {
-    cmd = { "lua-language-server" },
-    filetypes = { "lua" },
-    settings = {
-      Lua = {
-        runtime = { version = "LuaJIT" },
-        workspace = {
-          checkThirdParty = false,
-          library = { vim.env.VIMRUNTIME },
+return {
+  lsp = {
+    lua_ls = {
+      cmd = { "lua-language-server" },
+      filetypes = filetypes,
+      settings = {
+        Lua = {
+          runtime = { version = "LuaJIT" },
+          workspace = {
+            checkThirdParty = false,
+            library = { vim.env.VIMRUNTIME },
+          },
+          hint = { enable = true },
+          codeLens = { enable = true },
         },
-        hint = { enable = true },
-        codeLens = { enable = true },
       },
     },
-  })
-  vim.lsp.enable("lua_ls")
-end
+  },
 
-return M
+  fmt = {
+    filetypes = filetypes,
+    formatters = { "stylua" },
+  },
+}
