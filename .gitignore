@@ -1,9 +1,14 @@
 *
 !/internal/
 !/internal/**
+!/neovim/
+!/neovim/**
+!/npins/
+!/npins/**
 !/pkgs/
 !/pkgs/**
 !/.envrc
+!/.gitattributes
 !/.gitignore
 !/.mdformat.toml
 !/.stylua.toml
