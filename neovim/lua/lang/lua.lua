@@ -19,6 +19,11 @@ return {
     },
   },
 
+  lint = {
+    filetypes = filetypes,
+    linters = { "selene" },
+  },
+
   fmt = {
     filetypes = filetypes,
     formatters = { "stylua" },

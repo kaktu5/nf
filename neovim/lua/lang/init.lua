@@ -2,6 +2,7 @@ local langs = {
   "lua",
 }
 
+local linters_by_ft = {}
 local formatters_by_ft = {}
 
 for _, name in ipairs(langs) do
@@ -15,6 +16,12 @@ for _, name in ipairs(langs) do
     end
   end
 
+  if lang.lint then
+    for _, ft in ipairs(lang.lint.filetypes) do
+      linters_by_ft[ft] = lang.lint.linters
+    end
+  end
+
   if lang.fmt then
     for _, ft in ipairs(lang.fmt.filetypes) do
       formatters_by_ft[ft] = lang.fmt.formatters
@@ -24,4 +31,7 @@ for _, name in ipairs(langs) do
   ::continue::
 end
 
-return { formatters_by_ft = formatters_by_ft }
+return {
+  linters_by_ft = linters_by_ft,
+  formatters_by_ft = formatters_by_ft,
+}
