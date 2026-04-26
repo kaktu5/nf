@@ -1,0 +1,11 @@
+*
+!/internal/
+!/internal/**
+!/pkgs/
+!/pkgs/**
+!/.envrc
+!/.gitignore
+!/flake.lock
+!/flake.nix
+!/license
+!/readme.md
