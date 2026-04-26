@@ -3,8 +3,8 @@ local filetypes = { "lua" }
 return {
   lsp = {
     lua_ls = {
-      cmd = { "lua-language-server" },
       filetypes = filetypes,
+      cmd = { "lua-language-server" },
       settings = {
         Lua = {
           runtime = { version = "LuaJIT" },
