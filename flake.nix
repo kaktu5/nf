@@ -31,10 +31,10 @@
     mapSystems ["aarch64-linux" "x86_64-linux"] (system: let
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      devShells.default = import ./internal/devshell.nix {inherit lib pkgs;};
+      devShells.default = import ./flake/devshell.nix {inherit lib pkgs;};
 
-      formatter = import ./internal/formatter.nix {inherit lib pkgs;};
+      formatter = import ./flake/formatter.nix {inherit lib pkgs;};
 
-      packages = import ./internal/packages.nix {inherit inputs lib pkgs self;};
+      packages = import ./flake/packages.nix {inherit inputs lib pkgs self;};
     });
 }

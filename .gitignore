@@ -1,6 +1,6 @@
 *
-!/internal/
-!/internal/**
+!/flake/
+!/flake/**
 !/neovim/
 !/neovim/**
 !/npins/
