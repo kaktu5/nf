@@ -4,12 +4,17 @@
 }: let
   inherit (lib.attrsets) attrValues;
   inherit (pkgs) mkShellNoCC;
+
+  selene' = (pkgs.selene.overrideAttrs (old: {
+    cargoBuildFlags = old.cargoBuildFlags or [] ++ ["--features=lua52"];
+  })).override {robloxSupport = false;};
 in
   mkShellNoCC {
     name = "nf-devshell";
     packages = attrValues {
       # lua
-      inherit (pkgs) lua-language-server selene stylua;
+      inherit selene';
+      inherit (pkgs) lua-language-server stylua;
 
       # markdown
       inherit (pkgs) markdownlint-cli2 marksman mdformat;
