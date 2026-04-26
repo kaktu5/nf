@@ -1,3 +1,7 @@
+vim.lsp.config("*", {
+  root_markers = { ".jj", "flake.nix" },
+})
+
 local langs = {
   "lua",
   "nix",
