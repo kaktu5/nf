@@ -1,20 +1,9 @@
-local filetypes = { "nix" }
-
 return {
+  filetypes = { "nix" },
+
   lsp = {
-    nixd = {
-      filetypes = filetypes,
-      cmd = { "nixd", "--semantic-tokens=true" },
-    },
+    nixd = { cmd = { "nixd", "--semantic-tokens=true" } },
   },
 
-  lint = {
-    filetypes = filetypes,
-    linters = { "deadnix", "statix" },
-  },
-
-  fmt = {
-    filetypes = filetypes,
-    formatters = { "alejandra", "nixfmt", stop_after_first = true },
-  },
+  fmt = { "alejandra", "nixfmt", stop_after_first = true },
 }

@@ -12,20 +12,21 @@ for _, name in ipairs(langs) do
 
   if lang.lsp then
     for name, config in pairs(lang.lsp) do
+      config.filetypes = lang.filetypes
       vim.lsp.config(name, config)
       vim.lsp.enable(name)
     end
   end
 
   if lang.lint then
-    for _, ft in ipairs(lang.lint.filetypes) do
-      linters_by_ft[ft] = lang.lint.linters
+    for _, ft in ipairs(lang.filetypes) do
+      linters_by_ft[ft] = lang.lint
     end
   end
 
   if lang.fmt then
-    for _, ft in ipairs(lang.fmt.filetypes) do
-      formatters_by_ft[ft] = lang.fmt.formatters
+    for _, ft in ipairs(lang.filetypes) do
+      formatters_by_ft[ft] = lang.fmt
     end
   end
 

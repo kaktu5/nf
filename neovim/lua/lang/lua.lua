@@ -1,9 +1,8 @@
-local filetypes = { "lua" }
-
 return {
+  filetypes = { "lua" },
+
   lsp = {
     lua_ls = {
-      filetypes = filetypes,
       cmd = { "lua-language-server" },
       settings = {
         Lua = {
@@ -19,13 +18,7 @@ return {
     },
   },
 
-  lint = {
-    filetypes = filetypes,
-    linters = { "selene" },
-  },
+  lint = { "selene" },
 
-  fmt = {
-    filetypes = filetypes,
-    formatters = { "stylua" },
-  },
+  fmt = { "stylua" },
 }
