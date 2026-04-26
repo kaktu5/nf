@@ -7,4 +7,6 @@ require("direnv").setup({
     edit = "<leader>de",
     reload = "<leader>dr",
   },
+
+  notifications = { level = vim.log.levels.INFO },
 })
