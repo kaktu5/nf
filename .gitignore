@@ -5,6 +5,7 @@
 !/pkgs/**
 !/.envrc
 !/.gitignore
+!/.mdformat.toml
 !/.stylua.toml
 !/flake.lock
 !/flake.nix
