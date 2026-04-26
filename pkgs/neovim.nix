@@ -15,6 +15,8 @@ in
 
     aliases = ["vi" "vim"];
 
+    appName = "neovim";
+
     initLua = ''
       require("kkts");
       require("lz.n").load("lazy");
