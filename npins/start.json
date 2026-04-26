@@ -1,18 +1,5 @@
 {
   "pins": {
-    "direnv.nvim": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "NotAShelf",
-        "repo": "direnv.nvim"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "564146278b3d5fe4ffa389cd103bab20f9b515d6",
-      "url": "https://github.com/NotAShelf/direnv.nvim/archive/564146278b3d5fe4ffa389cd103bab20f9b515d6.tar.gz",
-      "hash": "sha256-JbnGoZMApLtq4lSdGolcpKdsneolSOrzIi+O5yR2NDQ="
-    },
     "fidget.nvim": {
       "type": "GitRelease",
       "repository": {
@@ -78,5 +65,5 @@
       "hash": "sha256-zR44d9MowLG1lIbvrRaFTpO/HXKKrO6lbtZfvvTdx+o="
     }
   },
-  "version": 7
+  "version": 8
 }
