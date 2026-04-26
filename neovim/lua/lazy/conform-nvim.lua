@@ -8,7 +8,7 @@ return {
   ft = vim.tbl_keys(formatters_by_ft),
 
   keys = {
-    { "<leader>f", function() require("conform").format({ async = true }) end },
+    { "<Leader>lf", function() require("conform").format({ async = true }) end },
   },
 
   after = function()
