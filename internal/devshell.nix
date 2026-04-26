@@ -9,8 +9,7 @@ in
     name = "nf-devshell";
     packages = attrValues {
       # lua
-      inherit (pkgs) lua-language-server stylua;
-      inherit (pkgs.luajitPackages) luacheck;
+      inherit (pkgs) lua-language-server selene stylua;
 
       # markdown
       inherit (pkgs) markdownlint-cli2 marksman mdformat;
