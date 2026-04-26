@@ -16,6 +16,22 @@
       "url": "https://api.github.com/repos/stevearc/conform.nvim/tarball/refs/tags/v9.1.0",
       "hash": "sha256-pUF9F5QoDzCZuVRcJEF91M8Qjkh/xosMkf9tRavkmJs="
     },
+    "indent-blankline.nvim": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "lukas-reineke",
+        "repo": "indent-blankline.nvim"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v3.9.1",
+      "revision": "d28a3f70721c79e3c5f6693057ae929f3d9c0a03",
+      "url": "https://api.github.com/repos/lukas-reineke/indent-blankline.nvim/tarball/refs/tags/v3.9.1",
+      "hash": "sha256-Vc79ff416uJFqKH8zlM1y208SxaQGpQPqGVbiz5Vflg="
+    },
     "nvim-lint": {
       "type": "Git",
       "repository": {
