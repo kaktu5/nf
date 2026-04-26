@@ -1,8 +1,10 @@
 local fidget = require("fidget")
 
 fidget.setup({
-  notification = { override_vim_notify = true },
-  window = { winblend = 100 },
+  notification = {
+    override_vim_notify = true,
+    window = { winblend = 100 },
+  },
 })
 
 vim.keymap.set("n", "<leader>fcc", fidget.notification.clear)
