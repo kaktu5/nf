@@ -1,5 +1,6 @@
 local langs = {
   "lua",
+  "nix",
 }
 
 local linters_by_ft = {}
