@@ -10,6 +10,7 @@
 !/.envrc
 !/.gitattributes
 !/.gitignore
+!/.luarc.json
 !/.mdformat.toml
 !/.stylua.toml
 !/flake.lock
