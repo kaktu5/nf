@@ -5,6 +5,7 @@
 !/pkgs/**
 !/.envrc
 !/.gitignore
+!/.stylua.toml
 !/flake.lock
 !/flake.nix
 !/license
