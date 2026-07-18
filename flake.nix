@@ -18,6 +18,8 @@
     nixpkgs,
     ...
   } @ inputs: let
+    sources = import ./npins;
+
     lib = nixpkgs.lib // {mnw = inputs.mnw.lib;};
 
     inherit (lib.attrsets) mapAttrs zipAttrsWith;
@@ -35,6 +37,6 @@
 
       formatter = import ./flake/formatter.nix {inherit lib pkgs;};
 
-      packages = import ./flake/packages.nix {inherit inputs lib pkgs self;};
+      packages = import ./flake/packages.nix {inherit inputs lib pkgs self sources;};
     });
 }
