@@ -1,15 +1,12 @@
 {
-  inputs,
   lib,
   blink-cmp,
   neovim-unwrapped,
   pkgs,
-  stdenv,
 }: let
   inherit (lib.fileset) toSource;
   inherit (lib.lists) singleton;
   inherit (lib.mnw) npinsToPluginsAttrs wrap;
-  inherit (stdenv.hostPlatform) system;
 in
   wrap pkgs {
     neovim = neovim-unwrapped;
