@@ -1,5 +1,18 @@
 {
   "pins": {
+    "canola.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "barrettruth",
+        "repo": "canola.nvim"
+      },
+      "branch": "canola",
+      "submodules": false,
+      "revision": "3e034f56dc6ebce05cade9a323013d4804c5a7a7",
+      "url": "https://github.com/barrettruth/canola.nvim/archive/3e034f56dc6ebce05cade9a323013d4804c5a7a7.tar.gz",
+      "hash": "sha256-HaKL7+KhCoyyPhvRH80lvkj933sh6AHdgYJjemp4rMk="
+    },
     "fidget.nvim": {
       "type": "GitRelease",
       "repository": {
