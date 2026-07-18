@@ -32,6 +32,19 @@
       "url": "https://api.github.com/repos/stevearc/conform.nvim/tarball/refs/tags/v9.1.0",
       "hash": "sha256-pUF9F5QoDzCZuVRcJEF91M8Qjkh/xosMkf9tRavkmJs="
     },
+    "nvim-colorizer.lua": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "norcalli",
+        "repo": "nvim-colorizer.lua"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "a065833f35a3a7cc3ef137ac88b5381da2ba302e",
+      "url": "https://github.com/norcalli/nvim-colorizer.lua/archive/a065833f35a3a7cc3ef137ac88b5381da2ba302e.tar.gz",
+      "hash": "sha256-gjO89Sx335PqVgceM9DBfcVozNjovC8KML1OZCRNMGw="
+    },
     "nvim-lint": {
       "type": "Git",
       "repository": {
