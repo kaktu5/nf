@@ -57,6 +57,22 @@
       "revision": "a219b2c9e5b4765e5c845aba119dad55806fcaf1",
       "url": "https://github.com/mfussenegger/nvim-lint/archive/a219b2c9e5b4765e5c845aba119dad55806fcaf1.tar.gz",
       "hash": "sha256-pABhzTRkcxAT/ELeltz47eCAKCnzdoCtc2QRu3wm0xU="
+    },
+    "telescope.nvim": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-telescope",
+        "repo": "telescope.nvim"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v0.2.2",
+      "revision": "5255aa27c422de944791318024167ad5d40aad20",
+      "url": "https://api.github.com/repos/nvim-telescope/telescope.nvim/tarball/refs/tags/v0.2.2",
+      "hash": "sha256-dOU6nQaq4W3KZrC2o2wv0NJ2LNWJgvuoNyWOYP2i4vo="
     }
   },
   "version": 8

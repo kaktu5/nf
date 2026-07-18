@@ -1,8 +1,10 @@
 {
   lib,
-  blink-cmp,
-  neovim-unwrapped,
   pkgs,
+  blink-cmp,
+  fd,
+  neovim-unwrapped,
+  ripgrep,
 }: let
   inherit (lib.fileset) toSource;
   inherit (lib.lists) singleton;
@@ -17,7 +19,8 @@ in
 
     initLua = ''
       require("kkts");
-      require("lz.n").load("lazy");
+      LZN = require("lz.n");
+      LZN.load("lazy");
     '';
 
     plugins = {
@@ -30,4 +33,6 @@ in
       startAttrs = npinsToPluginsAttrs pkgs ../npins/start.json;
       optAttrs = npinsToPluginsAttrs pkgs ../npins/opt.json;
     };
+
+    extraBinPath = [fd ripgrep];
   }
