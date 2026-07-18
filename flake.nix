@@ -3,21 +3,9 @@
     nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz";
 
     mnw.url = "github:gerg-l/mnw";
-
-    neovim-nightly-overlay = {
-      url = "github:nix-community/neovim-nightly-overlay";
-      inputs = {
-        flake-parts.inputs.nixpkgs-lib.follows = "nixpkgs";
-        nixpkgs.follows = "nixpkgs";
-      };
-    };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    ...
-  } @ inputs: let
+  outputs = {nixpkgs, ...} @ inputs: let
     sources = import ./npins;
 
     lib = nixpkgs.lib // {mnw = inputs.mnw.lib;};
@@ -37,6 +25,6 @@
 
       formatter = import ./flake/formatter.nix {inherit lib pkgs;};
 
-      packages = import ./flake/packages.nix {inherit inputs lib pkgs self sources;};
+      packages = import ./flake/packages.nix {inherit inputs lib pkgs sources;};
     });
 }

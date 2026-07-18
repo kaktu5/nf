@@ -1,19 +1,18 @@
 {
-  flake,
   inputs,
   lib,
+  blink-cmp,
+  neovim-unwrapped,
   pkgs,
   stdenv,
 }: let
-  inherit (flake.packages.${system}) blink-cmp;
-  inherit (inputs.neovim-nightly-overlay.packages.${system}) neovim;
   inherit (lib.fileset) toSource;
   inherit (lib.lists) singleton;
   inherit (lib.mnw) npinsToPluginsAttrs wrap;
   inherit (stdenv.hostPlatform) system;
 in
   wrap pkgs {
-    inherit neovim;
+    neovim = neovim-unwrapped;
 
     aliases = ["vi" "vim"];
 
