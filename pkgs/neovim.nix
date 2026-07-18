@@ -1,9 +1,11 @@
 {
+  flake,
   inputs,
   lib,
   pkgs,
   stdenv,
 }: let
+  inherit (flake.packages.${system}) blink-cmp;
   inherit (inputs.neovim-nightly-overlay.packages.${system}) neovim;
   inherit (lib.fileset) toSource;
   inherit (lib.lists) singleton;
@@ -27,6 +29,7 @@ in
         root = ../neovim;
         fileset = ../neovim;
       });
+      opt = [blink-cmp];
 
       startAttrs = npinsToPluginsAttrs pkgs ../npins/start.json;
       optAttrs = npinsToPluginsAttrs pkgs ../npins/opt.json;

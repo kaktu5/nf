@@ -1,5 +1,18 @@
 {
   "pins": {
+    "blink.lib": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "saghen",
+        "repo": "blink.lib"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "5876dd95deeb70aadbe9f1c0b7117a135061cdac",
+      "url": "https://github.com/saghen/blink.lib/archive/5876dd95deeb70aadbe9f1c0b7117a135061cdac.tar.gz",
+      "hash": "sha256-FsDcgBiD3fl0EO1advAoQBbA2HY1p8Ja7lwhmpB++Zc="
+    },
     "canola.nvim": {
       "type": "Git",
       "repository": {
