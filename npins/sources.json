@@ -13,6 +13,19 @@
       "url": "https://github.com/saghen/blink.cmp/archive/0f54bd78892f587db4dcf100a23eaddfc2a9df7d.tar.gz",
       "hash": "sha256-QE41xQY9G8ghgByfv6ANxEIgbCnuOh4YJFqFF9npOqU="
     },
+    "mnw": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "gerg-l",
+        "repo": "mnw"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "0151d9fa87992cbeb67c86616fb9170dcec830b6",
+      "url": "https://github.com/gerg-l/mnw/archive/0151d9fa87992cbeb67c86616fb9170dcec830b6.tar.gz",
+      "hash": "sha256-HRn4O1X2ShYtbq5Egji72/aemyc2cIQicjRZD9hBqM8="
+    },
     "neovim-nightly-overlay": {
       "type": "Git",
       "repository": {

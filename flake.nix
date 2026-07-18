@@ -1,14 +1,13 @@
 {
-  inputs = {
-    nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz";
-
-    mnw.url = "github:gerg-l/mnw";
-  };
+  inputs.nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz";
 
   outputs = {nixpkgs, ...} @ inputs: let
     sources = import ./npins;
 
-    lib = nixpkgs.lib // {mnw = inputs.mnw.lib;};
+    inherit (lib.fixedPoints) fix;
+
+    mnw = fix <| import (sources.mnw + /outputs.nix);
+    lib = nixpkgs.lib // {mnw = mnw.lib;};
 
     inherit (lib.attrsets) mapAttrs zipAttrsWith;
     inherit (lib.lists) foldl';
