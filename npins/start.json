@@ -24,10 +24,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v1.6.1",
-      "revision": "b61e8af9b8b68ee0ec7da5fb7a8c203aae854f2e",
-      "url": "https://api.github.com/repos/j-hui/fidget.nvim/tarball/refs/tags/v1.6.1",
-      "hash": "sha256-W0l2XW8/MfMRkQYr4AvXT4md2OPe8CD4hAHTtsJpU5w="
+      "version": "v2.0.0",
+      "revision": "e1a07a5e46fb65a45a0c76870140bd2d16a73ebf",
+      "url": "https://api.github.com/repos/j-hui/fidget.nvim/tarball/refs/tags/v2.0.0",
+      "hash": "sha256-MgA97AkIIaW6vofphe01tJq/brOmBy7ZVmDXuApxDAY="
     },
     "lz.n": {
       "type": "GitRelease",
@@ -40,10 +40,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v2.12.2",
-      "revision": "74194977d829b0d2de9a1514060114b568f6fdba",
-      "url": "https://api.github.com/repos/lumen-oss/lz.n/tarball/refs/tags/v2.12.2",
-      "hash": "sha256-YP8jlE71i/MuF11jsJUNIgojfKpekoSmMlWkKZj+GjQ="
+      "version": "v3.0.2",
+      "revision": "cd21cd6861c613a1e9285fdfd9b1d008eac9b7ec",
+      "url": "https://api.github.com/repos/lumen-oss/lz.n/tarball/refs/tags/v3.0.2",
+      "hash": "sha256-90JleDLnnE47KUyS9jtR/3xwuqDvVHfqrIMtJuzdtAA="
     },
     "nvim-web-devicons": {
       "type": "GitRelease",
