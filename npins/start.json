@@ -22,9 +22,9 @@
       },
       "branch": "canola",
       "submodules": false,
-      "revision": "3e034f56dc6ebce05cade9a323013d4804c5a7a7",
-      "url": "https://github.com/barrettruth/canola.nvim/archive/3e034f56dc6ebce05cade9a323013d4804c5a7a7.tar.gz",
-      "hash": "sha256-HaKL7+KhCoyyPhvRH80lvkj933sh6AHdgYJjemp4rMk="
+      "revision": "d7c349fd0ffc3d6e8eceefdf66af66cb1ab42826",
+      "url": "https://github.com/barrettruth/canola.nvim/archive/d7c349fd0ffc3d6e8eceefdf66af66cb1ab42826.tar.gz",
+      "hash": "sha256-D2RAZiGasqVc4tMj9XU+M9o9oCoGF5zjV+w1eLvzeKQ="
     },
     "fidget.nvim": {
       "type": "GitRelease",
