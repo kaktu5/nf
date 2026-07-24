@@ -74,6 +74,19 @@
       "url": "https://api.github.com/repos/nvim-tree/nvim-web-devicons/tarball/refs/tags/v0.100",
       "hash": "sha256-DSUTxUFCesXuaJjrDNvurILUt1IrO5MI5ukbZ8D87zQ="
     },
+    "oxocarbon.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nyoom-engineering",
+        "repo": "oxocarbon.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "cad101019701846b1c69747e4cae3c460376d674",
+      "url": "https://github.com/nyoom-engineering/oxocarbon.nvim/archive/cad101019701846b1c69747e4cae3c460376d674.tar.gz",
+      "hash": "sha256-9VyLP3jZG3k70MfCd9JM/5vkDBrR0WKJtLpH734og4k="
+    },
     "plenary.nvim": {
       "type": "GitRelease",
       "repository": {
