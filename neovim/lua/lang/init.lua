@@ -5,6 +5,7 @@ vim.lsp.config("*", {
 local langs = {
   "lua",
   "nix",
+  "rust",
 }
 
 local linters_by_ft = {}
