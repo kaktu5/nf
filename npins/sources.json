@@ -9,9 +9,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "0f54bd78892f587db4dcf100a23eaddfc2a9df7d",
-      "url": "https://github.com/saghen/blink.cmp/archive/0f54bd78892f587db4dcf100a23eaddfc2a9df7d.tar.gz",
-      "hash": "sha256-QE41xQY9G8ghgByfv6ANxEIgbCnuOh4YJFqFF9npOqU="
+      "revision": "e116ff9c5c1c2ed6bcdb2e0a6e547099876a8116",
+      "url": "https://github.com/saghen/blink.cmp/archive/e116ff9c5c1c2ed6bcdb2e0a6e547099876a8116.tar.gz",
+      "hash": "sha256-DCtyteRRY4C3tsfTsx7K7Hf1rQZednIXsYRh9pBW7Xg="
     },
     "mnw": {
       "type": "Git",
@@ -35,9 +35,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "a82bcd88f4b4ed8251287540a2af7b685e3648c2",
-      "url": "https://github.com/nix-community/neovim-nightly-overlay/archive/a82bcd88f4b4ed8251287540a2af7b685e3648c2.tar.gz",
-      "hash": "sha256-Ai3xkqq/2SoWrP8VnKyKFu2NQdWc/+P9F2zNKX6IxuY="
+      "revision": "3dc8fa3b0b2220ffd0836012407b15aa6747d3fe",
+      "url": "https://github.com/nix-community/neovim-nightly-overlay/archive/3dc8fa3b0b2220ffd0836012407b15aa6747d3fe.tar.gz",
+      "hash": "sha256-yWAvE6T0QGm60MUNEvIpUK/VLJvjIDmnX+P/AKQwRyo="
     }
   },
   "version": 8
