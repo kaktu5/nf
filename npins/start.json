@@ -9,9 +9,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "5876dd95deeb70aadbe9f1c0b7117a135061cdac",
-      "url": "https://github.com/saghen/blink.lib/archive/5876dd95deeb70aadbe9f1c0b7117a135061cdac.tar.gz",
-      "hash": "sha256-FsDcgBiD3fl0EO1advAoQBbA2HY1p8Ja7lwhmpB++Zc="
+      "revision": "fd9a48ebbe6ec30d5dfcc5b42c243941ccdca1aa",
+      "url": "https://github.com/saghen/blink.lib/archive/fd9a48ebbe6ec30d5dfcc5b42c243941ccdca1aa.tar.gz",
+      "hash": "sha256-CyDv8bRHjGKpn/qDMaplDBcqwQl73ZPkhjmvzkizF/I="
     },
     "canola.nvim": {
       "type": "Git",
@@ -22,9 +22,9 @@
       },
       "branch": "canola",
       "submodules": false,
-      "revision": "d7c349fd0ffc3d6e8eceefdf66af66cb1ab42826",
-      "url": "https://github.com/barrettruth/canola.nvim/archive/d7c349fd0ffc3d6e8eceefdf66af66cb1ab42826.tar.gz",
-      "hash": "sha256-D2RAZiGasqVc4tMj9XU+M9o9oCoGF5zjV+w1eLvzeKQ="
+      "revision": "3ca7adc52418cfadd0450fb0858413b9935f00d5",
+      "url": "https://github.com/barrettruth/canola.nvim/archive/3ca7adc52418cfadd0450fb0858413b9935f00d5.tar.gz",
+      "hash": "sha256-ZWavZPFXdJcloatFaNZraD5qz7XZvFLMlHDw1quq50I="
     },
     "fidget.nvim": {
       "type": "GitRelease",
@@ -53,10 +53,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v3.0.2",
-      "revision": "cd21cd6861c613a1e9285fdfd9b1d008eac9b7ec",
-      "url": "https://api.github.com/repos/lumen-oss/lz.n/tarball/refs/tags/v3.0.2",
-      "hash": "sha256-90JleDLnnE47KUyS9jtR/3xwuqDvVHfqrIMtJuzdtAA="
+      "version": "v3.1.0",
+      "revision": "30a9fe7ead3b93f500106e181c84cc7567febe2f",
+      "url": "https://api.github.com/repos/lumen-oss/lz.n/tarball/refs/tags/v3.1.0",
+      "hash": "sha256-PAqz9Vb8TTzxN53sWCqYpCxGudSUyGo/Cx9Gds0crAM="
     },
     "nvim-web-devicons": {
       "type": "GitRelease",
@@ -83,9 +83,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "cad101019701846b1c69747e4cae3c460376d674",
-      "url": "https://github.com/nyoom-engineering/oxocarbon.nvim/archive/cad101019701846b1c69747e4cae3c460376d674.tar.gz",
-      "hash": "sha256-9VyLP3jZG3k70MfCd9JM/5vkDBrR0WKJtLpH734og4k="
+      "revision": "cd6523a0836d6e8ee823d343149fd06c7b71fdde",
+      "url": "https://github.com/nyoom-engineering/oxocarbon.nvim/archive/cd6523a0836d6e8ee823d343149fd06c7b71fdde.tar.gz",
+      "hash": "sha256-uBnofSeUInShMyie3RSZ6KFgJZXb8BplngClTQkNyGA="
     },
     "plenary.nvim": {
       "type": "GitRelease",

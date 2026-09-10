@@ -11,10 +11,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v2.2.0",
-      "revision": "2b25b36b0661746bc28f24f15525ff9b1d910e9d",
-      "url": "https://api.github.com/repos/saghen/blink.indent/tarball/refs/tags/v2.2.0",
-      "hash": "sha256-x4nILac79C60FVsMQiWqlU1FjM891W5U9UZWwGAjnk0="
+      "version": "v2.3.0",
+      "revision": "1535cfd4463079486132f80ed1ac5802654771c8",
+      "url": "https://api.github.com/repos/saghen/blink.indent/tarball/refs/tags/v2.3.0",
+      "hash": "sha256-guvgw3xTgdPcIduVoshnhtdjbNiirWujnilBMU+PzVM="
     },
     "conform.nvim": {
       "type": "GitRelease",
@@ -54,9 +54,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "a219b2c9e5b4765e5c845aba119dad55806fcaf1",
-      "url": "https://github.com/mfussenegger/nvim-lint/archive/a219b2c9e5b4765e5c845aba119dad55806fcaf1.tar.gz",
-      "hash": "sha256-pABhzTRkcxAT/ELeltz47eCAKCnzdoCtc2QRu3wm0xU="
+      "revision": "3d55c8f67c6ae5c15e1042571e107c7a3d5c5f4e",
+      "url": "https://github.com/mfussenegger/nvim-lint/archive/3d55c8f67c6ae5c15e1042571e107c7a3d5c5f4e.tar.gz",
+      "hash": "sha256-IcV2QgxhGpTs7xTzLMOrqGuFdAaSuC96HQ3cu8+fTFY="
     },
     "telescope.nvim": {
       "type": "GitRelease",
