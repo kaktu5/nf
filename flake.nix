@@ -1,7 +1,7 @@
 {
   inputs.nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst";
 
-  outputs = {nixpkgs, ...} @ inputs: let
+  outputs = {nixpkgs, ...}: let
     sources = import ./npins;
 
     inherit (lib.fixedPoints) fix;
@@ -24,6 +24,6 @@
 
       formatter = import ./flake/formatter.nix {inherit lib pkgs;};
 
-      packages = import ./flake/packages.nix {inherit inputs lib pkgs sources;};
+      packages = import ./flake/packages.nix {inherit lib pkgs sources;};
     });
 }

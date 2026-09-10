@@ -1,5 +1,4 @@
 {
-  inputs,
   lib,
   pkgs,
   sources,
@@ -10,6 +9,6 @@
 in
   fix (final:
     packagesFromDirectoryRecursive {
-      callPackage = callPackageWith (pkgs // final // {inherit inputs lib sources;});
+      callPackage = callPackageWith (pkgs // final // {inherit lib sources;});
       directory = ../pkgs;
     })
