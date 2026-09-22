@@ -1,14 +1,21 @@
--- rust_analyzer configuration adapted from https://github.com/neovim/nvim-lspconfig/blob/d592c1e6ad9a0a01b3d5ed3f0345d68407167181/lsp/rust_analyzer.lua
-
 local function reload_workspace(bufnr)
   local clients = vim.lsp.get_clients({ bufnr = bufnr, name = "rust_analyzer" })
   for _, client in ipairs(clients) do
     vim.notify("Reloading Cargo Workspace")
+    ---@diagnostic disable-next-line:param-type-mismatch
     client:request("rust-analyzer/reloadWorkspace", nil, function(err)
       if err then error(tostring(err)) end
       vim.notify("Cargo workspace reloaded")
     end, 0)
   end
+end
+
+local function executable_exists(command)
+  local exists = vim.fn.executable(command) == 1
+
+  if not exists then vim.notify_once(("[rust_analyzer] %s not found."):format(command), vim.log.levels.WARN) end
+
+  return exists
 end
 
 local function user_sysroot_src()
@@ -18,21 +25,11 @@ end
 local function default_sysroot_src()
   local sysroot = vim.tbl_get(vim.lsp.config["rust_analyzer"], "settings", "rust-analyzer", "cargo", "sysroot")
   if not sysroot then
-    local rustc = os.getenv("RUSTC") or "rustc"
-    local result = vim.system({ rustc, "--print", "sysroot" }, { text = true }):wait()
+    local result = vim
+      .system({ "cargo", "-Z", "unstable-options", "rustc", "--print", "sysroot" }, { text = true })
+      :wait()
 
-    local stdout = result.stdout
-    if result.code == 0 and stdout then
-      if string.sub(stdout, #stdout) == "\n" then
-        if #stdout > 1 then
-          sysroot = string.sub(stdout, 1, #stdout - 1)
-        else
-          sysroot = ""
-        end
-      else
-        sysroot = stdout
-      end
-    end
+    if result.code == 0 and result.stdout then sysroot = vim.trim(result.stdout) end
   end
 
   return sysroot and vim.fs.joinpath(sysroot, "lib/rustlib/src/rust/library") or nil
@@ -57,9 +54,12 @@ local function is_library(fname)
   end
 end
 
-local rust_analyzer = {
+return {
   cmd = { "rust-analyzer" },
+  filetypes = { "rust" },
   root_dir = function(bufnr, on_dir)
+    if not executable_exists("cargo") then return end
+
     local fname = vim.api.nvim_buf_get_name(bufnr)
     local reused_dir = is_library(fname)
     if reused_dir then
@@ -164,14 +164,4 @@ local rust_analyzer = {
       { desc = "Reload current cargo workspace" }
     )
   end,
-}
-
-return {
-  filetypes = { "rust" },
-
-  lsp = { rust_analyzer = rust_analyzer },
-
-  lint = { "clippy" },
-
-  fmt = { "rustfmt" },
 }

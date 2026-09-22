@@ -1,4 +1,8 @@
-local linters_by_ft = require("lang").linters_by_ft
+local linters_by_ft = {
+  lua = { "selene" },
+  nix = {},
+  rust = { "clippy" },
+}
 
 return {
   "nvim-lint",
