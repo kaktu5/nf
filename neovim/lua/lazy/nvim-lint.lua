@@ -1,6 +1,5 @@
 local linters_by_ft = {
   lua = { "selene" },
-  nix = {},
   rust = { "clippy" },
 }
 

@@ -2,6 +2,7 @@ local formatters_by_ft = {
   lua = { "stylua" },
   nix = { "alejandra", "nixfmt", stop_after_first = true },
   rust = { "rustfmt" },
+  typ = { "typstyle" },
 }
 
 return {
