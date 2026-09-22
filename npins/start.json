@@ -22,9 +22,9 @@
       },
       "branch": "canola",
       "submodules": false,
-      "revision": "3ca7adc52418cfadd0450fb0858413b9935f00d5",
-      "url": "https://github.com/barrettruth/canola.nvim/archive/3ca7adc52418cfadd0450fb0858413b9935f00d5.tar.gz",
-      "hash": "sha256-ZWavZPFXdJcloatFaNZraD5qz7XZvFLMlHDw1quq50I="
+      "revision": "3de261d21572be6debad2ad29701507f4fbdcef7",
+      "url": "https://github.com/barrettruth/canola.nvim/archive/3de261d21572be6debad2ad29701507f4fbdcef7.tar.gz",
+      "hash": "sha256-XE7h/nk+8TWMW/1xzw/J11pWRYOURnMqaUvli3RE7QM="
     },
     "fidget.nvim": {
       "type": "GitRelease",
@@ -53,10 +53,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v3.1.0",
-      "revision": "30a9fe7ead3b93f500106e181c84cc7567febe2f",
-      "url": "https://api.github.com/repos/lumen-oss/lz.n/tarball/refs/tags/v3.1.0",
-      "hash": "sha256-PAqz9Vb8TTzxN53sWCqYpCxGudSUyGo/Cx9Gds0crAM="
+      "version": "v3.1.1",
+      "revision": "d04ec8e3016bdb6ad2e66abada755f4f6a807bda",
+      "url": "https://api.github.com/repos/lumen-oss/lz.n/tarball/refs/tags/v3.1.1",
+      "hash": "sha256-7xTE/G6bMzDQtPf2pVvTpceXUy4sxB0nisgYNrNq5nM="
     },
     "nvim-web-devicons": {
       "type": "GitRelease",
