@@ -30,7 +30,16 @@ in
       });
       opt = [blink-cmp];
 
-      startAttrs = npinsToPluginsAttrs pkgs ../npins/start.json;
+      startAttrs =
+        npinsToPluginsAttrs pkgs ../npins/start.json
+        // {
+          inherit
+            (pkgs.vimPlugins.nvim-treesitter-parsers)
+            nix
+            rust
+            typst
+            ;
+        };
       optAttrs = npinsToPluginsAttrs pkgs ../npins/opt.json;
     };
 
