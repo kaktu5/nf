@@ -7,8 +7,8 @@
 !/npins/**/*.nix
 !/pkgs/**/*.nix
 
-!/.envrc
 !/.gitattributes
+!/.cade
 !/.gitignore
 !/.luarc.json
 !/.mdformat.toml
