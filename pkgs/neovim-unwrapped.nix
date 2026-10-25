@@ -1,10 +1,10 @@
 {
+  inputs,
   lib,
   pkgs,
-  sources,
 }: let
+  inherit (inputs) neovim-nightly-overlay;
   inherit (lib.trivial) importJSON;
-  inherit (sources) neovim-nightly-overlay;
 
   packages = "${neovim-nightly-overlay}/flake/packages";
 

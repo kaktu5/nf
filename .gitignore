@@ -1,10 +1,15 @@
 *
 !/**/
+!.gitignore
+
+!/.tack/default.nix
+!/.tack/pins.lock.json
+!/.tack/pins.toml
 
 !/flake/**/*.nix
+
 !/neovim/**/*.lua
-!/npins/**/*.json
-!/npins/**/*.nix
+
 !/pkgs/**/*.nix
 
 !/.cade
@@ -12,7 +17,6 @@
 !/.luarc.json
 !/.mdformat.toml
 !/.stylua.toml
-!/flake.lock
 !/flake.nix
 !/license
 !/readme.md

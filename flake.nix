@@ -1,13 +1,11 @@
 {
-  inputs.nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst";
-
-  outputs = {nixpkgs, ...}: let
-    sources = import ./npins;
+  outputs = {self, ...} @ args: let
+    inputs = (import ./.tack) {overrides = args.tackOverrides or {};};
 
     inherit (lib.fixedPoints) fix;
 
-    mnw = fix <| import (sources.mnw + /outputs.nix);
-    lib = nixpkgs.lib // {mnw = mnw.lib;};
+    mnw = fix <| import "${inputs.mnw}/outputs.nix";
+    lib = inputs.nixpkgs.lib // {mnw = mnw.lib;};
 
     inherit (lib.attrsets) mapAttrs zipAttrsWith;
     inherit (lib.lists) foldl';
@@ -18,12 +16,12 @@
       |> zipAttrsWith (_: foldl' (a: b: a // b) {});
   in
     mapSystems ["aarch64-linux" "x86_64-linux"] (system: let
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = inputs.nixpkgs.legacyPackages.${system};
     in {
-      devShells.default = import ./flake/devshell.nix {inherit lib pkgs;};
+      devShells.default = import ./flake/devshell.nix {inherit inputs lib pkgs system;};
 
       formatter = import ./flake/formatter.nix {inherit lib pkgs;};
 
-      packages = import ./flake/packages.nix {inherit lib pkgs sources;};
+      packages = import ./flake/packages.nix {inherit inputs lib pkgs;};
     });
 }

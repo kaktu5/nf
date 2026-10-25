@@ -1,23 +1,24 @@
 # based on https://github.com/gerg-l/nvim-flake/blob/50f4f389774779d14bc32a982352207ea113b840/packages/blink-cmp/package.nix
 {
+  inputs,
   lib,
-  sources,
   rust-jemalloc-sys,
   rustPlatform,
   stdenv,
 }: let
+  inherit (inputs) blink-cmp;
+  inherit (inputs._meta.blink-cmp) rev;
   inherit (lib.lists) optional;
   inherit (lib.strings) substring;
   inherit (rustPlatform) buildRustPackage;
-  inherit (sources) blink-cmp;
   inherit (stdenv.hostPlatform) isAarch64;
 in
-  buildRustPackage {
+  buildRustPackage (finalAttrs: {
     pname = "blink.cmp";
-    version = substring 0 7 blink-cmp.revision;
+    version = substring 0 7 rev;
 
     src = blink-cmp;
-    cargoLock.lockFile = blink-cmp + /Cargo.lock;
+    cargoLock.lockFile = "${finalAttrs.src}/Cargo.lock";
 
     buildInputs = optional isAarch64 rust-jemalloc-sys;
 
@@ -32,4 +33,4 @@ in
 
     # don't move /doc to $out/share
     forceShare = [];
-  }
+  })

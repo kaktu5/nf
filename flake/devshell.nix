@@ -1,7 +1,10 @@
 {
+  inputs,
   lib,
   pkgs,
+  system,
 }: let
+  inherit (inputs.tack.packages.${system}) tack;
   inherit (lib.attrsets) attrValues;
   inherit (pkgs) mkShellNoCC;
 
@@ -11,6 +14,9 @@
 in
   mkShellNoCC {
     name = "nf-devshell";
+
+    env.TACK_NIX_CONF_TOKENS = "1";
+
     packages = attrValues {
       # lua
       inherit selene';
@@ -20,7 +26,8 @@ in
       inherit (pkgs) markdownlint-cli2 marksman mdformat;
 
       # nix
-      inherit (pkgs) alejandra dix nixd npins;
+      inherit tack;
+      inherit (pkgs) alejandra dix nixd;
 
       # toml
       inherit (pkgs) taplo tombi;

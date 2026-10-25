@@ -1,7 +1,7 @@
 {
+  inputs,
   lib,
   pkgs,
-  sources,
 }: let
   inherit (lib.customisation) callPackageWith;
   inherit (lib.filesystem) packagesFromDirectoryRecursive;
@@ -9,6 +9,6 @@
 in
   fix (final:
     packagesFromDirectoryRecursive {
-      callPackage = callPackageWith (pkgs // final // {inherit lib sources;});
+      callPackage = callPackageWith (pkgs // final // {inherit inputs lib;});
       directory = ../pkgs;
     })
