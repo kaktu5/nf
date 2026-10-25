@@ -7,7 +7,6 @@
 !/npins/**/*.nix
 !/pkgs/**/*.nix
 
-!/.gitattributes
 !/.cade
 !/.gitignore
 !/.luarc.json
