@@ -4,24 +4,34 @@ recomposable = true
 [shorturls]
 channel = "https://channels.nixos.org/{path}/nixexprs.tar.zst"
 
+[groups]
+sources.type = "fetch"
+start = { fetch_mode = "build", type = "fetch" }
+opt = { fetch_mode = "build", type = "fetch" }
+
 [inputs]
 nixpkgs.url = "channel:nixos-unstable"
-tack.url = "github:manic-systems/tack"
+tack = { url = "github:manic-systems/tack", patches = [
+  "github:manic-systems/tack/pull/208",
+] }
+mnw.url = "github:gerg-l/mnw"
 
-blink-cmp = { url = "github:saghen/blink.cmp", type = "fetch" }
-mnw = { url = "github:gerg-l/mnw", type = "fetch" }
-neovim-nightly-overlay = { url = "github:nix-community/neovim-nightly-overlay", type = "fetch" }
+# sources
+neovim-nightly-overlay = { url = "github:nix-community/neovim-nightly-overlay", group = "sources" }
+blink-cmp = { url = "github:saghen/blink.cmp", group = "sources" }
 
-blink-lib = { url = "github:saghen/blink.lib", type = "fetch", group = "start" }
-canola-nvim = { url = "github:barrettruth/canola.nvim/canola", type = "fetch", group = "start" }
-fidget-nvim = { url = "github:j-hui/fidget.nvim", type = "fetch", tag = "v{version}", group = "start" }
-lz-n = { url = "github:lumen-oss/lz.n", type = "fetch", tag = "v{version}", group = "start" }
-nvim-web-devicons = { url = "github:nvim-tree/nvim-web-devicons", type = "fetch", group = "start" }
-oxocarbon-nvim = { url = "github:nyoom-engineering/oxocarbon.nvim", type = "fetch", group = "start" }
-plenary-nvim = { url = "github:nvim-lua/plenary.nvim", type = "fetch", tag = "v{version}", group = "start" }
+# start
+blink-lib = { url = "github:saghen/blink.lib", group = "start" }
+canola-nvim = { url = "github:barrettruth/canola.nvim/canola", group = "start" }
+fidget-nvim = { url = "github:j-hui/fidget.nvim", tag = "v{version}", group = "start" }
+lz-n = { url = "github:lumen-oss/lz.n", tag = "v{version}", group = "start" }
+nvim-web-devicons = { url = "github:nvim-tree/nvim-web-devicons", group = "start" }
+oxocarbon-nvim = { url = "github:nyoom-engineering/oxocarbon.nvim", group = "start" }
+plenary-nvim = { url = "github:nvim-lua/plenary.nvim", tag = "v{version}", group = "start" }
 
-blink-indent = { url = "github:saghen/blink.indent", type = "fetch", tag = "v{version}", group = "opt" }
-conform-nvim = { url = "github:stevearc/conform.nvim", type = "fetch", tag = "v{version}", group = "opt" }
-nvim-colorizer-lua = { url = "github:norcalli/nvim-colorizer.lua", type = "fetch", group = "opt" }
-nvim-lint = { url = "github:mfussenegger/nvim-lint", type = "fetch", group = "opt" }
-telescope-nvim = { url = "github:nvim-telescope/telescope.nvim", type = "fetch", tag = "v{version}", group = "opt" }
+# opt
+blink-indent = { url = "github:saghen/blink.indent", tag = "v{version}", group = "opt" }
+conform-nvim = { url = "github:stevearc/conform.nvim", tag = "v{version}", group = "opt" }
+nvim-colorizer-lua = { url = "github:norcalli/nvim-colorizer.lua", group = "opt" }
+nvim-lint = { url = "github:mfussenegger/nvim-lint", group = "opt" }
+telescope-nvim = { url = "github:nvim-telescope/telescope.nvim", tag = "v{version}", group = "opt" }

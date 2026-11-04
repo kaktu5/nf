@@ -15,8 +15,6 @@
   inherit (lib.trivial) importTOML;
   inherit (pkgs.vimUtils) buildVimPlugin;
 
-  pins = importTOML ../.tack/pins.toml;
-
   mkPlugin = name: let
     meta = inputs._meta.${name};
     version = meta.version or (substring 0 7 meta.rev);
@@ -31,7 +29,7 @@
   };
 
   pluginsIn = group:
-    pins.inputs
+    inputs._meta
     |> filterAttrs (_: v: (v.group or null) == group)
     |> mapAttrsToList (name: _: mkPlugin name)
     |> listToAttrs;

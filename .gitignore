@@ -3,6 +3,8 @@
 !.gitignore
 
 !/.tack/default.nix
+!/.tack/diffs/*.diff
+!/.tack/patches/**/*.patch
 !/.tack/pins.lock.json
 !/.tack/pins.toml
 

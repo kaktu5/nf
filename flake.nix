@@ -2,11 +2,7 @@
   outputs = {self, ...} @ args: let
     inputs = (import ./.tack) {overrides = args.tackOverrides or {};};
 
-    inherit (lib.fixedPoints) fix;
-
-    mnw = fix <| import "${inputs.mnw}/outputs.nix";
-    lib = inputs.nixpkgs.lib // {mnw = mnw.lib;};
-
+    lib = inputs.nixpkgs.lib // {mnw = inputs.mnw.lib;};
     inherit (lib.attrsets) mapAttrs zipAttrsWith;
     inherit (lib.lists) foldl';
 
