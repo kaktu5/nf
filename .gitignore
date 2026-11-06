@@ -12,7 +12,6 @@
 
 !/neovim/**/*.lua
 
-!/pkgs/**/*.nix
 
 !/.cade
 !/.gitignore
@@ -21,6 +20,7 @@
 !/.stylua.toml
 !/flake.nix
 !/license
+!/neovim.nix
 !/readme.md
 !/selene.toml
 !/vim.yml

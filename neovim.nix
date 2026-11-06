@@ -49,8 +49,8 @@ in
 
     plugins = {
       start = singleton (toSource {
-        root = ../neovim;
-        fileset = ../neovim;
+        root = ./neovim;
+        fileset = ./neovim;
       });
       opt = [blink-cmp];
 

@@ -18,6 +18,9 @@
 
       formatter = import ./flake/formatter.nix {inherit lib pkgs;};
 
-      packages = import ./flake/packages.nix {inherit inputs lib pkgs;};
+      packages = {
+        neovim = pkgs.callPackage ./neovim.nix {inherit inputs lib;};
+        default = self.packages.${system}.neovim;
+      };
     });
 }
