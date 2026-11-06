@@ -17,7 +17,6 @@ tack = { url = "github:manic-systems/tack", patches = [
 mnw.url = "github:gerg-l/mnw"
 
 # sources
-neovim-nightly-overlay = { url = "github:nix-community/neovim-nightly-overlay", group = "sources" }
 blink-cmp = { url = "github:saghen/blink.cmp", group = "sources" }
 
 # start

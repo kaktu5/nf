@@ -2,18 +2,18 @@
   inputs,
   lib,
   pkgs,
-  blink-cmp,
   fd,
   neovim-unwrapped,
   ripgrep,
+  vimPlugins,
 }: let
   inherit (lib.attrsets) filterAttrs listToAttrs mapAttrsToList;
   inherit (lib.fileset) toSource;
   inherit (lib.lists) singleton;
   inherit (lib.mnw) wrap;
   inherit (lib.strings) substring;
-  inherit (lib.trivial) importTOML;
   inherit (pkgs.vimUtils) buildVimPlugin;
+  inherit (vimPlugins) blink-cmp;
 
   mkPlugin = name: let
     meta = inputs._meta.${name};

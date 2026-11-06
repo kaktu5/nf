@@ -8,7 +8,6 @@
     "fidget-nvim": "github:j-hui/fidget.nvim",
     "lz-n": "github:lumen-oss/lz.n",
     "mnw": "github:gerg-l/mnw",
-    "neovim-nightly-overlay": "github:nix-community/neovim-nightly-overlay",
     "nixpkgs": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst",
     "nvim-colorizer-lua": "github:norcalli/nvim-colorizer.lua",
     "nvim-lint": "github:mfussenegger/nvim-lint",
