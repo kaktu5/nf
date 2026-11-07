@@ -30,7 +30,7 @@
 
   pluginsIn = group:
     inputs._meta
-    |> filterAttrs (_: v: (v.group or null) == group)
+    |> filterAttrs (_: v: v.group == group)
     |> mapAttrsToList (name: _: mkPlugin name)
     |> listToAttrs;
 in
