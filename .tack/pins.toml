@@ -11,9 +11,7 @@ opt = { fetch_mode = "build", type = "fetch" }
 
 [inputs]
 nixpkgs.url = "channel:nixos-unstable"
-tack = { url = "github:manic-systems/tack", patches = [
-  "github:manic-systems/tack/pull/208",
-] }
+tack.url = "github:manic-systems/tack"
 mnw.url = "github:gerg-l/mnw"
 
 # sources

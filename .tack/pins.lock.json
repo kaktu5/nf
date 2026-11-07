@@ -117,24 +117,12 @@
     "narHash": "sha256-6IWPAMEotKY/nQvs1kU6qwMwCXTeW5HlOhw2RwFHFdI=",
     "lastModified": 1790357809
   },
-  "neovim-nightly-overlay": {
-    "type": "github",
-    "owner": "nix-community",
-    "repo": "neovim-nightly-overlay",
-    "rev": "60eb4aa73b9aba4d92a7ee09919a0a579536b6ad",
-    "narHash": "sha256-Tqc2oCw9o3efz+r6h4vo80GZ9Tdqrc4dA4C4fhWpBH0=",
-    "lastModified": 1793923363,
-    "archive": {
-      "hash": "sha256-Wsjxshv88gRCw03fTsuSEa36TxA/JYp9/U+3MWT8/EI=",
-      "outHash": "sha256-4KTxsBsZBwOKbSAi+ElnmvYL586g6qzJStarPle56bU="
-    }
-  },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1107793.1d060086d60c/nixexprs.tar.zst?rev=1d060086d60cb76a40cf37109f979d88a5bd6396&lastModified=1793726008",
-    "rev": "1d060086d60cb76a40cf37109f979d88a5bd6396",
-    "narHash": "sha256-iNjybNORi/2+shilhMlkNr01UHWKOHRGzQyIyvobs9o=",
-    "lastModified": 1793726008
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1108983.f9a75f41be3a/nixexprs.tar.zst?rev=f9a75f41be3a74eab55d3a7679d34ad6cc0da977&lastModified=1793876309",
+    "rev": "f9a75f41be3a74eab55d3a7679d34ad6cc0da977",
+    "narHash": "sha256-Q62pssAT9r01POiSyXW0IPXBWhntiKqMhzlsp3bsl5I=",
+    "lastModified": 1793876309
   },
   "nvim-colorizer-lua": {
     "type": "github",
@@ -202,24 +190,9 @@
     "type": "github",
     "owner": "manic-systems",
     "repo": "tack",
-    "rev": "8162a7e9d098f6ea0fc00404014a732b8e768da8",
-    "narHash": "sha256-dMyQFIkLF3f0sQFMSzlEWFZV2q4SG5Zrdbon5fbCbdA=",
-    "lastModified": 1793888518,
-    "patched": {
-      "path": "/nix/store/n32v2xq7fhmlk6lnq09m3ikpss173swj-source",
-      "narHash": "sha256-NkEQK3h5pn39Cj4zMf/EYoxUo0/SNnkR0yGaYvJ96DA=",
-      "lastModified": 1793888518,
-      "patches": [
-        {
-          "source": "github:manic-systems/tack/pull/208",
-          "url": "https://github.com/manic-systems/tack/pull/208",
-          "file": "patches/tack/pr-208.patch",
-          "sha256": "3241e2161578219e69212c50639b85fe81c1cfe587b1ffc97c05b5a8dddad2af",
-          "head": "52bca8bb4a53be742cde7e968b9d49519eeee463"
-        }
-      ],
-      "diff": "c954a51f3d07f2c9699f2655ef34a616d179c7751e1aed7627818c819881ec7d"
-    }
+    "rev": "cd02f41558f0ccf8b1ae67fd96950ed0e6553129",
+    "narHash": "sha256-NkEQK3h5pn39Cj4zMf/EYoxUo0/SNnkR0yGaYvJ96DA=",
+    "lastModified": 1794039014
   },
   "telescope-nvim": {
     "type": "github",
