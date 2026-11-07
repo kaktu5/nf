@@ -10,9 +10,9 @@ start = { fetch_mode = "build", type = "fetch" }
 opt = { fetch_mode = "build", type = "fetch" }
 
 [inputs]
-nixpkgs.url = "channel:nixos-unstable"
-tack.url = "github:manic-systems/tack"
-mnw.url = "github:gerg-l/mnw"
+nixpkgs = { url = "channel:nixos-unstable", group = "flake" }
+tack = { url = "github:manic-systems/tack", group = "flake" }
+mnw = { url = "github:gerg-l/mnw", group = "flake" }
 
 # sources
 blink-cmp = { url = "github:saghen/blink.cmp", group = "sources" }
