@@ -9,26 +9,28 @@ sources.type = "fetch"
 start = { fetch_mode = "build", type = "fetch" }
 opt = { fetch_mode = "build", type = "fetch" }
 
-[inputs]
-nixpkgs = { url = "channel:nixos-unstable", group = "flake" }
-tack = { url = "github:manic-systems/tack", group = "flake" }
-mnw = { url = "github:gerg-l/mnw", group = "flake" }
+[inputs.flake]
+nixpkgs.url = "channel:nixos-unstable"
+tack = { url = "github:manic-systems/tack", patches = [
+  "github:manic-systems/tack/pull/209",
+]}
+mnw.url = "github:gerg-l/mnw"
 
-# sources
-blink-cmp = { url = "github:saghen/blink.cmp", group = "sources" }
+[inputs.sources]
+blink-cmp.url = "github:saghen/blink.cmp"
 
-# start
-blink-lib = { url = "github:saghen/blink.lib", group = "start" }
-canola-nvim = { url = "github:barrettruth/canola.nvim/canola", group = "start" }
-fidget-nvim = { url = "github:j-hui/fidget.nvim", tag = "v{version}", group = "start" }
-lz-n = { url = "github:lumen-oss/lz.n", tag = "v{version}", group = "start" }
-nvim-web-devicons = { url = "github:nvim-tree/nvim-web-devicons", group = "start" }
-oxocarbon-nvim = { url = "github:nyoom-engineering/oxocarbon.nvim", group = "start" }
-plenary-nvim = { url = "github:nvim-lua/plenary.nvim", tag = "v{version}", group = "start" }
+[inputs.start]
+blink-lib.url = "github:saghen/blink.lib"
+canola-nvim.url = "github:barrettruth/canola.nvim/canola"
+fidget-nvim = { url = "github:j-hui/fidget.nvim", tag = "v{version}"}
+lz-n = { url = "github:lumen-oss/lz.n", tag = "v{version}"}
+nvim-web-devicons.url = "github:nvim-tree/nvim-web-devicons"
+oxocarbon-nvim.url = "github:nyoom-engineering/oxocarbon.nvim"
+plenary-nvim = { url = "github:nvim-lua/plenary.nvim", tag = "v{version}"}
 
-# opt
-blink-indent = { url = "github:saghen/blink.indent", tag = "v{version}", group = "opt" }
-conform-nvim = { url = "github:stevearc/conform.nvim", tag = "v{version}", group = "opt" }
-nvim-colorizer-lua = { url = "github:norcalli/nvim-colorizer.lua", group = "opt" }
-nvim-lint = { url = "github:mfussenegger/nvim-lint", group = "opt" }
-telescope-nvim = { url = "github:nvim-telescope/telescope.nvim", tag = "v{version}", group = "opt" }
+[inputs.opt]
+blink-indent = { url = "github:saghen/blink.indent", tag = "v{version}"}
+conform-nvim = { url = "github:stevearc/conform.nvim", tag = "v{version}"  }
+nvim-colorizer-lua.url = "github:norcalli/nvim-colorizer.lua"
+nvim-lint.url = "github:mfussenegger/nvim-lint"
+telescope-nvim = { url = "github:nvim-telescope/telescope.nvim", tag = "v{version}"}
