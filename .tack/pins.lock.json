@@ -21,12 +21,12 @@
     "type": "github",
     "owner": "saghen",
     "repo": "blink.cmp",
-    "rev": "7b31e1b6497be70f620bbad83a789929248697ac",
-    "narHash": "sha256-8m/YJF19Ws2WQAcYX8qc/nEKPMVhRyR/tU9WRwPHOtE=",
-    "lastModified": 1793831625,
+    "rev": "3d3631f641e6e9b60066f269f435d23c524ceeb0",
+    "narHash": "sha256-t0S5HAz6WMPmtRS5qWYcUKwQ41cPLyMSx1kSuFyFmt4=",
+    "lastModified": 1794790418,
     "archive": {
-      "hash": "sha256-dkTCVTYuJtqAVFA+zpKrRVl+zZbY6pURLCscBDxjzg4=",
-      "outHash": "sha256-uyV8A44J2bR99/+XAkQvxfPi7fSL//3DrZuHpxmkm8g="
+      "hash": "sha256-Cnc4sqePdIuPOsE/hQ8FoqWrX3MCI19XSBL7y0fTw0U=",
+      "outHash": "sha256-s+mlVsivcUUMInlAK30i5vOQWMXLf8rtgD1QQrKzTsE="
     }
   },
   "blink-indent": {
@@ -119,10 +119,10 @@
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1113206.f4a03c008967/nixexprs.tar.zst?rev=f4a03c008967841f2a0b3cb7c436fc6fc31671f6&lastModified=1794042290",
-    "rev": "f4a03c008967841f2a0b3cb7c436fc6fc31671f6",
-    "narHash": "sha256-VZ8WvA9m3XN36juXyg/GwbDRU2OezOHJlXpJCXkccv0=",
-    "lastModified": 1794042290
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1125864.2786a2a72088/nixexprs.tar.zst?rev=2786a2a72088ecf32aea5b3ec52099e6a7cff78f&lastModified=1795234589",
+    "rev": "2786a2a72088ecf32aea5b3ec52099e6a7cff78f",
+    "narHash": "sha256-pAEASBc6wof0S58XcSEdZoQ2iFQDkCnZwH+wFLrkd1Q=",
+    "lastModified": 1795234589
   },
   "nvim-colorizer-lua": {
     "type": "github",
@@ -140,12 +140,12 @@
     "type": "github",
     "owner": "mfussenegger",
     "repo": "nvim-lint",
-    "rev": "52107ce2076a27a285af781248e2c59bad817cd0",
-    "narHash": "sha256-Q/UqA4DQ242FXcUYYAB7RWQ6RdUkDC57M97k3SWx2Gw=",
-    "lastModified": 1793269300,
+    "rev": "6bf29b9dbdad60b38b489b23309c22ba6d4c915a",
+    "narHash": "sha256-N8Db2DU0swrBdULCqTSrWX2mtiX8QFpzNwA5y28uh8Q=",
+    "lastModified": 1795090514,
     "archive": {
-      "hash": "sha256-kV7lUrLHau/agglaPdmdd6UDsUavHqjLwOZHudN1ayg=",
-      "outHash": "sha256-JwQ0T+1UCLsxm/bhrjB/vfKyQalFgrwVuWWE4FDG4dU="
+      "hash": "sha256-pLh6B3PrRsCc3aym9m34QNU9XNj5uJg8RlEdQdbfLx4=",
+      "outHash": "sha256-PYoExYYvhvrKO8ZWaEEebrr2ydxE79v/pNtZ+OascWE="
     }
   },
   "nvim-web-devicons": {
@@ -190,24 +190,9 @@
     "type": "github",
     "owner": "manic-systems",
     "repo": "tack",
-    "rev": "7d2b9344af472e3dc0047fe387dc9cacd63c4597",
-    "narHash": "sha256-hrsa+AccOSScK9zAx4u1e5yd+enCyHfRdhhPH7xF5x0=",
-    "lastModified": 1794235387,
-    "patched": {
-      "path": "/nix/store/izr12rhjhrqzn17y0zbdl4c1f6wdn3s2-source",
-      "narHash": "sha256-63EuCfYVfoOGP36JxK9tZY8M+8qKVOTPOyw+E+idzMc=",
-      "lastModified": 1794235387,
-      "patches": [
-        {
-          "source": "github:manic-systems/tack/pull/209",
-          "url": "https://github.com/manic-systems/tack/pull/209",
-          "file": "patches/tack/pr-209.patch",
-          "sha256": "8f51041e3b71d723726f962872fec6af900628394fd4f9324c9db208b0e20f8d",
-          "head": "e6395e780fd98795b27088b5280e4f792498aca9"
-        }
-      ],
-      "diff": "0150bdd3e19aa768755bc51fc55e428ecece3097091e77263474a2e398da85a1"
-    }
+    "rev": "5fba22058c07e258e77005144373845df04aa420",
+    "narHash": "sha256-4y/PrwhX1+kEbYyD9++i03/xjeJiTp0rbD3IEwgAkfI=",
+    "lastModified": 1795612357
   },
   "telescope-nvim": {
     "type": "github",
