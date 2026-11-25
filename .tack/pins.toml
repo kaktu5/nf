@@ -11,8 +11,9 @@ opt = { fetch_mode = "build", type = "fetch" }
 
 [inputs.flake]
 nixpkgs.url = "channel:nixos-unstable"
-tack.url = "github:manic-systems/tack"
+alejandra.url = "github:kamadorueda/alejandra"
 mnw.url = "github:gerg-l/mnw"
+tack.url = "github:manic-systems/tack"
 
 [inputs.sources]
 blink-cmp.url = "github:saghen/blink.cmp"

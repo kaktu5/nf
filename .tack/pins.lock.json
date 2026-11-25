@@ -1,5 +1,6 @@
 {
   "$declared": {
+    "alejandra": "github:kamadorueda/alejandra",
     "blink-cmp": "github:saghen/blink.cmp",
     "blink-indent": "github:saghen/blink.indent",
     "blink-lib": "github:saghen/blink.lib",
@@ -16,6 +17,15 @@
     "plenary-nvim": "github:nvim-lua/plenary.nvim",
     "tack": "github:manic-systems/tack",
     "telescope-nvim": "github:nvim-telescope/telescope.nvim"
+  },
+  "alejandra": {
+    "type": "github",
+    "owner": "kamadorueda",
+    "repo": "alejandra",
+    "rev": "d6457f52f7335446e8188852070ceb0bbdf8bc13",
+    "narHash": "sha256-JKO72eFr/br/8LqkH+qI7biZJCT79rnIOsjFJFLID3g=",
+    "lastModified": 1795587918,
+    "public": true
   },
   "blink-cmp": {
     "type": "github",
@@ -119,7 +129,7 @@
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1125864.2786a2a72088/nixexprs.tar.zst?rev=2786a2a72088ecf32aea5b3ec52099e6a7cff78f&lastModified=1795234589",
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1125864.2786a2a72088/nixexprs.tar.zst?lastModified=1795234589&rev=2786a2a72088ecf32aea5b3ec52099e6a7cff78f",
     "rev": "2786a2a72088ecf32aea5b3ec52099e6a7cff78f",
     "narHash": "sha256-pAEASBc6wof0S58XcSEdZoQ2iFQDkCnZwH+wFLrkd1Q=",
     "lastModified": 1795234589
@@ -190,9 +200,10 @@
     "type": "github",
     "owner": "manic-systems",
     "repo": "tack",
-    "rev": "5fba22058c07e258e77005144373845df04aa420",
-    "narHash": "sha256-4y/PrwhX1+kEbYyD9++i03/xjeJiTp0rbD3IEwgAkfI=",
-    "lastModified": 1795612357
+    "rev": "147cec2879505729dbcf2d8ff9848be19b6f7094",
+    "narHash": "sha256-qGjfI0mOgZ1WXjocPeDCL0WqjWy2v0/VyMgYqwfmf6k=",
+    "lastModified": 1795654496,
+    "public": true
   },
   "telescope-nvim": {
     "type": "github",
