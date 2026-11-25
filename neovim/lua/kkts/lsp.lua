@@ -7,4 +7,5 @@ vim.lsp.enable({
   "nixd",
   "rust_analyzer",
   "tinymist",
+  "tombi",
 })

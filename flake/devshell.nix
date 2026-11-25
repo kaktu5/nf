@@ -30,6 +30,6 @@ in
       inherit (pkgs) alejandra dix nixd;
 
       # toml
-      inherit (pkgs) taplo tombi;
+      inherit (pkgs) tombi;
     };
   }

@@ -20,15 +20,15 @@ blink-cmp.url = "github:saghen/blink.cmp"
 [inputs.start]
 blink-lib.url = "github:saghen/blink.lib"
 canola-nvim.url = "github:barrettruth/canola.nvim/canola"
-fidget-nvim = { url = "github:j-hui/fidget.nvim", tag = "v{version}"}
-lz-n = { url = "github:lumen-oss/lz.n", tag = "v{version}"}
+fidget-nvim = { url = "github:j-hui/fidget.nvim", tag = "v{version}" }
+lz-n = { url = "github:lumen-oss/lz.n", tag = "v{version}" }
 nvim-web-devicons.url = "github:nvim-tree/nvim-web-devicons"
 oxocarbon-nvim.url = "github:nyoom-engineering/oxocarbon.nvim"
-plenary-nvim = { url = "github:nvim-lua/plenary.nvim", tag = "v{version}"}
+plenary-nvim = { url = "github:nvim-lua/plenary.nvim", tag = "v{version}" }
 
 [inputs.opt]
-blink-indent = { url = "github:saghen/blink.indent", tag = "v{version}"}
-conform-nvim = { url = "github:stevearc/conform.nvim", tag = "v{version}"  }
+blink-indent = { url = "github:saghen/blink.indent", tag = "v{version}" }
+conform-nvim = { url = "github:stevearc/conform.nvim", tag = "v{version}" }
 nvim-colorizer-lua.url = "github:norcalli/nvim-colorizer.lua"
 nvim-lint.url = "github:mfussenegger/nvim-lint"
-telescope-nvim = { url = "github:nvim-telescope/telescope.nvim", tag = "v{version}"}
+telescope-nvim = { url = "github:nvim-telescope/telescope.nvim", tag = "v{version}" }

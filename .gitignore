@@ -3,8 +3,6 @@
 !.gitignore
 
 !/.tack/default.nix
-!/.tack/diffs/*.diff
-!/.tack/patches/**/*.patch
 !/.tack/pins.lock.json
 !/.tack/pins.toml
 
@@ -12,12 +10,11 @@
 
 !/neovim/**/*.lua
 
-
 !/.cade
-!/.gitignore
 !/.luarc.json
 !/.mdformat.toml
 !/.stylua.toml
+!/.tombi.toml
 !/flake.nix
 !/license
 !/neovim.nix

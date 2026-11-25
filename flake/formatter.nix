@@ -9,7 +9,7 @@ in
     name = "nf-nix3-fmt-wrapper";
 
     runtimeInputs = attrValues {
-      inherit (pkgs) alejandra fd mdformat stylua taplo;
+      inherit (pkgs) alejandra fd mdformat stylua tombi;
     };
 
     runtimeEnv.RUST_LOG = "warn";
@@ -18,6 +18,6 @@ in
       fd "$@" -t f -e lua -X stylua
       fd "$@" -t f -e md -X mdformat
       fd "$@" -t f -e nix -E .tack/default.nix -X alejandra --quiet
-      fd "$@" -t f -e toml -X taplo format
+      fd "$@" -t f -e toml -X tombi format
     '';
   }
