@@ -1,7 +1,9 @@
 {
+  inputs,
   lib,
   pkgs,
 }: let
+  inherit (inputs.alejandra.overlays.default pkgs {}) alejandra;
   inherit (lib.attrsets) attrValues;
   inherit (pkgs) writeShellApplication;
 in
@@ -9,7 +11,8 @@ in
     name = "nf-nix3-fmt-wrapper";
 
     runtimeInputs = attrValues {
-      inherit (pkgs) alejandra fd mdformat stylua tombi;
+      inherit alejandra;
+      inherit (pkgs) fd mdformat stylua tombi;
     };
 
     runtimeEnv.RUST_LOG = "warn";

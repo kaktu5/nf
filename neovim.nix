@@ -9,7 +9,6 @@
 }: let
   inherit (lib.attrsets) filterAttrs listToAttrs mapAttrsToList;
   inherit (lib.fileset) toSource;
-  inherit (lib.lists) singleton;
   inherit (lib.mnw) wrap;
   inherit (lib.strings) substring;
   inherit (pkgs.vimUtils) buildVimPlugin;
@@ -41,31 +40,29 @@ in
 
     appName = "neovim";
 
-    initLua = ''
+    initLua = /*lua*/ ''
       require("kkts");
       LZN = require("lz.n");
       LZN.load("lazy");
     '';
 
     plugins = {
-      start = singleton (toSource {
-        root = ./neovim;
-        fileset = ./neovim;
-      });
+      start = [
+        (toSource {
+          root = ./neovim;
+          fileset = ./neovim;
+        })
+        (vimPlugins.nvim-treesitter.withPlugins (p: [
+          p.bash
+          p.lua
+          p.nix
+          p.rust
+          p.typst
+        ]))
+      ];
       opt = [blink-cmp];
 
-      startAttrs =
-        pluginsIn "start"
-        // {
-          inherit
-            (pkgs.vimPlugins.nvim-treesitter-parsers)
-            bash
-            lua
-            nix
-            rust
-            typst
-            ;
-        };
+      startAttrs = pluginsIn "start";
       optAttrs = pluginsIn "opt";
     };
 

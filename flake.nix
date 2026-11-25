@@ -16,7 +16,7 @@
     in {
       devShells.default = import ./flake/devshell.nix {inherit inputs lib pkgs system;};
 
-      formatter = import ./flake/formatter.nix {inherit lib pkgs;};
+      formatter = import ./flake/formatter.nix {inherit inputs lib pkgs;};
 
       packages = {
         neovim = pkgs.callPackage ./neovim.nix {inherit inputs lib;};

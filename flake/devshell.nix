@@ -4,6 +4,7 @@
   pkgs,
   system,
 }: let
+  inherit (inputs.alejandra.overlays.default pkgs {}) alejandra;
   inherit (inputs.tack.packages.${system}) tack;
   inherit (lib.attrsets) attrValues;
   inherit (pkgs) mkShellNoCC;
@@ -26,8 +27,8 @@ in
       inherit (pkgs) markdownlint-cli2 marksman mdformat;
 
       # nix
-      inherit tack;
-      inherit (pkgs) alejandra dix nixd;
+      inherit alejandra tack;
+      inherit (pkgs) dix nixd;
 
       # toml
       inherit (pkgs) tombi;
