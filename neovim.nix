@@ -59,6 +59,8 @@ in
         // {
           inherit
             (pkgs.vimPlugins.nvim-treesitter-parsers)
+            bash
+            lua
             nix
             rust
             typst
